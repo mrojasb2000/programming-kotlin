@@ -2,10 +2,13 @@
 
 
 # Compile:
-kotlinc <filename>.kt -include-runtime -d <filename>.jar
+kotlinc filename.kt -include-runtime -d filename.jar
 	
 # Execute:
-java -jar <filename>.jar
+java -jar filename.jar
 	
 # Check bytecode:
-javap -c <filename>Kt.class
+javap -c filenameKt.class
+
+# Scripting Kotlin
+kotlic -script filename.kts
